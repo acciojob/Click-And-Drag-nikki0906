@@ -36,29 +36,7 @@
 
 <script>
 //Your code goes here 
-	const container = document.querySelector('.container');
-        let isDragging = false;
-
-        container.addEventListener('mousedown', (e) => {
-            if (e.target.classList.contains('cube')) {
-                isDragging = true;
-                e.target.classList.add('active');
-            }
-        });
-
-        container.addEventListener('mouseover', (e) => {
-            if (isDragging && e.target.classList.contains('cube')) {
-                e.target.classList.add('active');
-            }
-        });
-
-        container.addEventListener('mouseup', () => {
-            isDragging = false;
-        });
-
-        container.addEventListener('mouseleave', () => {
-            isDragging = false;
-        });
+	
 </script>
 
   </body>
